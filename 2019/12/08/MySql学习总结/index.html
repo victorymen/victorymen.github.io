@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="阿门的博客">
+    <meta name="keyword" content="华为">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        阿门的博客 | amen&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> sometimes code， sometimes design </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>阿门</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archive">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#3-2-Ubuntu-Linux-安装配置-MySQL"><span class="toc-text">3.2 Ubuntu Linux 安装配置 MySQL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-尝试-MySQL"><span class="toc-text">3.3 尝试 MySQL</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-1-约束分类"><span class="toc-text">2.1 约束分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-建立含约束的表"><span class="toc-text">2.2 建立含约束的表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-主键"><span class="toc-text">2.3 主键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-默认值约束"><span class="toc-text">2.4 默认值约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-唯一约束"><span class="toc-text">2.5 唯一约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-外键约束"><span class="toc-text">2.6 外键约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-外键约束-1"><span class="toc-text">2.6 外键约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-外键约束-2"><span class="toc-text">2.6 外键约束</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建一个简易的成绩管理系统的数据库"><span class="toc-text">搭建一个简易的成绩管理系统的数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目标"><span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提示"><span class="toc-text">提示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#挑战参考代码"><span class="toc-text">挑战参考代码</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SELECT语句详解"><span class="toc-text">SELECT语句详解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-基本的SELECT语句"><span class="toc-text">3.1 基本的SELECT语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-数学符号条件"><span class="toc-text">3.2 数学符号条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-“AND”与“OR”"><span class="toc-text">3.3 “AND”与“OR”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-IN-和-NOT-IN"><span class="toc-text">3.4 IN 和 NOT IN</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> sometimes code， sometimes design </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2019-12-08 20:05:29</span></span>
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="3-2-Ubuntu-Linux-安装配置-MySQL"><a href="#3-2-Ubuntu-Linux-安装配置-MySQL" class="headerlink" title="3.2 Ubuntu Linux 安装配置 MySQL"></a>3.2 Ubuntu Linux 安装配置 MySQL</h1><p>修改密码： mysqladmin -u root password</p>
+<p>在 Ubuntu 上安装 MySQL，最简单的方式是在线安装。只需要几行简单的命令（ <code>#</code> 号后面是注释）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">安装 MySQL 服务端、核心程序</span></span><br><span class="line">sudo apt-get install mysql-server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装 MySQL 客户端</span></span><br><span class="line">sudo apt-get install mysql-client</span><br></pre></td></tr></table></figure>
+<p>在安装过程中会提示确认输入 YES，设置 root 用户密码（之后也可以修改）等，稍等片刻便可安装成功。</p>
+<p>安装结束后，用命令验证是否安装并启动成功：</p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo netstat -tap <span class="string">| grep mysql</span></span><br></pre></td></tr></table></figure>
+<p>如果出现如下提示，则安装成功：</p>
+<p><img src="/wm-1575702931303.png" alt="1-02"> </p>
+<p>此时，可以根据自己的需求，用 gedit 修改 MySQL 的配置文件（my.cnf）,使用以下命令:</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/mysql/<span class="keyword">my</span>.cnf</span><br></pre></td></tr></table></figure>
+<p>至此，MySQL 已经安装、配置完成，可以正常使用了。</p>
+<h2 id="3-3-尝试-MySQL"><a href="#3-3-尝试-MySQL" class="headerlink" title="3.3 尝试 MySQL"></a>3.3 尝试 MySQL</h2><p><strong>1). 打开 MySQL</strong></p>
+<p>使用如下两条命令，打开 MySQL 服务并使用 root 用户登录：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动 MySQL 服务</span></span><br><span class="line">sudo<span class="built_in"> service </span>mysql start             </span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 root 用户登录，实验楼环境的密码为空，直接回车就可以登录</span></span><br><span class="line">mysql -u root</span><br></pre></td></tr></table></figure>
+<p>执行成功会出现如下提示：</p>
+<p><img src="/wm-1575702927141.png" alt="1-03"></p>
+<p><strong>2). 查看数据库</strong></p>
+<p>使用命令 <code>show databases;</code>，查看有哪些数据库（注意不要漏掉分号 <code>;</code>）：</p>
+<p><img src="/wm-1575702924078.png" alt="1-04"></p>
+<p>可见已有三个数据库，分别是 “information-schema”、“mysql”、“performance-schema”。</p>
+<p><strong>3). 连接数据库</strong></p>
+<p>选择连接其中一个数据库，语句格式为 <code>use &lt;数据库名&gt;</code>，这里可以不用加分号，这里我们选择 <code>information_schema</code> 数据库：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> information_schema</span><br></pre></td></tr></table></figure>
+<p><img src="/wm-1575702920827.png" alt="1-05"></p>
+<p><strong>4). 查看表</strong></p>
+<p>使用命令 <code>show tables;</code> 查看数据库中有哪些表（<strong>注意不要漏掉“;”</strong>）：</p>
+<p><img src="/wm-1575702916542.png" alt="1-06"></p>
+<p><strong>5). 退出</strong></p>
+<p>使用命令 <code>quit</code> 或者 <code>exit</code> 退出 MySQL。it<code>或者</code>exit` 退出 MySQL。</p>
+<p>本节实验会创建几个表，然后对其中的各个字段添加约束，学习添加和测试约束的方法。</p>
+<h1 id="2-1-约束分类"><a href="#2-1-约束分类" class="headerlink" title="2.1 约束分类"></a>2.1 约束分类</h1><p>听名字就知道，约束是一种限制，它通过对表的行或列的数据做出限制，来确保表的数据的完整性、唯一性。</p>
+<p>比如，规定一个用户的用户名不能为空值且没有重复的记录，这就是一种约束规则。</p>
+<p>在MySQL中，通常有这几种约束：</p>
+<table>
+<thead>
+<tr>
+<th>约束类型：</th>
+<th>主键</th>
+<th>默认值</th>
+<th>唯一</th>
+<th>外键</th>
+<th>非空</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>关键字：</td>
+<td>PRIMARY KEY</td>
+<td>DEFAULT</td>
+<td>UNIQUE</td>
+<td>FOREIGN KEY</td>
+<td>NOT NULL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-2-建立含约束的表"><a href="#2-2-建立含约束的表" class="headerlink" title="2.2 建立含约束的表"></a>2.2 建立含约束的表</h2><p>为了方便介绍这几种约束，我们先建立一个数据库。</p>
+<blockquote>
+<p>注：如果你是从上一节直接进入本节进行学习的，请先删除上一节建立的数据库<code>mysql_shiyan</code>，删除语句为<code>DROP DATABASE mysql_shiyan;</code> 关于数据库的删除操作我们会具体讲解，这里先继续实验。</p>
+</blockquote>
+<p>当然不用你一行一行地输入命令搭建这个数据库，实验楼已经为你准备好了。首先打开 Xfce 终端，输入命令进入 <code>/home/shiyanlou/Desktop</code> 目录：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Desktop</span><br></pre></td></tr></table></figure>
+<p>使用 git 命令将需要的数据文件下载到本地文件夹：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/shiyanlou/SQL3.git</span><br></pre></td></tr></table></figure>
+<p>下载完成后，输入命令开启 MySQL 服务并使用 root 用户登录：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#打开 MySQL 服务</span></span><br><span class="line">sudo<span class="built_in"> service </span>mysql start        </span><br><span class="line"></span><br><span class="line"><span class="comment">#使用 root 用户登录</span></span><br><span class="line">mysql -u root</span><br></pre></td></tr></table></figure>
+<p>刚才下载的 SQL3 目录下，有个文件 <code>MySQL-03-01.sql</code>，其中包含的代码可以新建一个数据库 <code>mysql_shiyan</code>,然后在其中创建三张表 <code>department</code>，<code>employee</code>，<code>project</code>，它们包含了各种约束。</p>
+<p>（SQL3 目录在桌面上，你可以用Gedit查看里面的 <code>MySQL-03-01.sql</code> 文件。）</p>
+<p>如果你是接着上一个实验开始操作的话，记得先使用如下命令删掉 mysql_shiyan 数据库：</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> mysql_shiyan;</span><br></pre></td></tr></table></figure>
+<p>加载文件中的数据，需要在 MySQL 控制台中输入命令：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">source</span> <span class="regexp">/home/</span>shiyanlou<span class="regexp">/Desktop/</span>SQL3<span class="regexp">/MySQL-03-01.sql;</span></span><br></pre></td></tr></table></figure>
+<p>查看一下这个数据库，输入命令 <code>show tables;</code>，可见：</p>
+<p><img src="/wm.png" alt="00"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE mysql_shiyan;</span><br><span class="line"></span><br><span class="line">use mysql_shiyan;</span><br><span class="line"></span><br><span class="line">CREATE TABLE department</span><br><span class="line">(</span><br><span class="line">  dpt_name   CHAR(20) NOT NULL,</span><br><span class="line">  people_num INT(10) DEFAULT &apos;10&apos;,</span><br><span class="line">  CONSTRAINT dpt_pk PRIMARY KEY (dpt_name)</span><br><span class="line"> );</span><br><span class="line"></span><br><span class="line">CREATE TABLE employee</span><br><span class="line">(</span><br><span class="line">  id      INT(10) PRIMARY KEY,</span><br><span class="line">  name    CHAR(20),</span><br><span class="line">  age     INT(10),</span><br><span class="line">  salary  INT(10) NOT NULL,</span><br><span class="line">  phone   INT(12) NOT NULL,</span><br><span class="line">  in_dpt  CHAR(20) NOT NULL,</span><br><span class="line">  UNIQUE  (phone),</span><br><span class="line">  CONSTRAINT emp_fk FOREIGN KEY (in_dpt) REFERENCES department(dpt_name)</span><br><span class="line"> );</span><br><span class="line"> </span><br><span class="line">CREATE TABLE project</span><br><span class="line">(</span><br><span class="line">  proj_num   INT(10) NOT NULL,</span><br><span class="line">  proj_name  CHAR(20) NOT NULL,</span><br><span class="line">  start_date DATE NOT NULL,</span><br><span class="line">  end_date   DATE DEFAULT &apos;2015-04-01&apos;,</span><br><span class="line">  of_dpt     CHAR(20) REFERENCES department(dpt_name),</span><br><span class="line">  CONSTRAINT proj_pk PRIMARY KEY (proj_num,proj_name)</span><br><span class="line"> );</span><br></pre></td></tr></table></figure>
+<h2 id="2-3-主键"><a href="#2-3-主键" class="headerlink" title="2.3 主键"></a>2.3 主键</h2><p>在数据库中，如果有两行记录数据完全一样，那么如何来区分呢？ 答案是无法区分，如果有两行记录完全相同，那么对于 Mysql 就会认定它们是同一个实体，这于现实生活是存在差别的。</p>
+<p>假如我们要存储一个学生的信息，信息包含姓名，身高，性别，年龄。</p>
+<p>不幸的是有两个女孩都叫小梦，且她们的身高和年龄相同，数据库将无法区分这两个实体，这时就需要用到主键了。</p>
+<p>主键 (PRIMARY KEY)是用于约束表中的一行，作为这一行的唯一标识符，在一张表中通过主键就能准确定位到一行，因此主键十分重要，主键不能有重复记录且不能为空。</p>
+<p>在 <code>MySQL-03-01.sql</code> 中，这里有主键：</p>
+<p><img src="/wm-1575702876942.png" alt="07"></p>
+<p>也可以这样定义主键：</p>
+<p><img src="/wm-1575702876927.png" alt="08-"></p>
+<p>还有一种特殊的主键——复合主键。主键不仅可以是表中的一列，也可以由表中的两列或多列来共同标识，比如：</p>
+<p><img src="/wm-1575702877004.png" alt="09-"></p>
+<h2 id="2-4-默认值约束"><a href="#2-4-默认值约束" class="headerlink" title="2.4 默认值约束"></a>2.4 默认值约束</h2><p>默认值约束 (DEFAULT) 规定，当有 DEFAULT 约束的列，插入数据为空时，将使用默认值。</p>
+<p>默认值常用于一些可有可无的字段，比如用户的个性签名，如果用户没有设置，系统给他应该设定一个默认的文本，比如空文本或 ‘这个人太懒了，没有留下任何信息’</p>
+<p>在 <code>MySQL-03-01.sql</code> 中，这段代码包含了 DEFAULT 约束：</p>
+<p><img src="/wm-1575704398592.png" alt="10"></p>
+<p>DEFAULT 约束只会在使用 INSERT 语句（上一实验介绍过）时体现出来， INSERT 语句中，如果被 DEFAULT 约束的位置没有值，那么这个位置将会被 DEFAULT 的值填充，如语句：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 正常插入数据</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> department(dpt_name,people_num) <span class="keyword">VALUES</span>(<span class="string">'dpt1'</span>,<span class="number">11</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">#插入新的数据，people_num 为空，使用默认值</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> department(dpt_name) <span class="keyword">VALUES</span>(<span class="string">'dpt2'</span>);</span><br></pre></td></tr></table></figure>
+<p>输入命令 <code>SELECT * FROM department;</code>，可见表中第二行的people_num 被 DEFAULT 的值 (10) 填充：</p>
+<p><img src="/wm-1575704398596.png" alt="01"></p>
+<h2 id="2-5-唯一约束"><a href="#2-5-唯一约束" class="headerlink" title="2.5 唯一约束"></a>2.5 唯一约束</h2><p>唯一约束 (UNIQUE) 比较简单，它规定一张表中指定的一列的值必须不能有重复值，即这一列每个值都是唯一的。</p>
+<p>在 <code>MySQL-03-01.sql</code> 中，也有 UNIQUE 约束：</p>
+<p><img src="/wm-1575704425942.png" alt="11"></p>
+<p>当 INSERT 语句新插入的数据和已有数据重复的时候，如果有 UNIQUE 约束，则 INSERT 失败，比如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> employee <span class="keyword">VALUES</span>(<span class="number">01</span>,<span class="string">'Tom'</span>,<span class="number">25</span>,<span class="number">3000</span>,<span class="number">110110</span>,<span class="string">'dpt1'</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> employee <span class="keyword">VALUES</span>(<span class="number">02</span>,<span class="string">'Jack'</span>,<span class="number">30</span>,<span class="number">3500</span>,<span class="number">110110</span>,<span class="string">'dpt2'</span>);</span><br></pre></td></tr></table></figure>
+<p>结果如图：</p>
+<p><img src="/wm-1575704425989.png" alt="02"></p>
+<h2 id="2-6-外键约束"><a href="#2-6-外键约束" class="headerlink" title="2.6 外键约束"></a>2.6 外键约束</h2><p>外键 (FOREIGN KEY) 既能确保数据完整性，也能表现表之间的关系。</p>
+<p>比如，现在有用户表和文章表，给文章表中添加一个指向用户 id 的外键，表示这篇文章所属的用户 id，外键将确保这个外键指向的记录是存在的，如果你尝试删除一个用户，而这个用户还有文章存在于数据库中，那么操作将无法完成并报错。因为你删除了该用户过后，他发布的文章都没有所属用户了，而这样的情况是不被允许的。同理，你在创建一篇文章的时候也不能为它指定一个不存在的用户 id。</p>
+<p>一个表可以有多个外键，每个外键必须 REFERENCES (参考) 另一个表的主键，被外键约束的列，取值必须在它参考的列中有对应值。</p>
+<p><img src="/wm-1575707116696.png" alt="12-"></p>
+<p>在 INSERT 时，如果被外键约束的值没有在参考列中有对应，比如以下命令，参考列 (department 表的 dpt_name) 中没有 dpt3，则 INSERT 失败：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> employee <span class="keyword">VALUES</span>(<span class="number">02</span>,<span class="string">'Jack'</span>,<span class="number">30</span>,<span class="number">3500</span>,<span class="number">114114</span>,<span class="string">'dpt3'</span>);</span><br></pre></td></tr></table></figure>
+<p>可见之后将 dpt3 改为 dpt2（department 表中有 dpt2），则插入成功：</p>
+<p><img src="/wm-1575707116771.png" alt="03"></p>
+<h2 id="2-6-外键约束-1"><a href="#2-6-外键约束-1" class="headerlink" title="2.6 外键约束"></a>2.6 外键约束</h2><p>外键 (FOREIGN KEY) 既能确保数据完整性，也能表现表之间的关系。</p>
+<p>比如，现在有用户表和文章表，给文章表中添加一个指向用户 id 的外键，表示这篇文章所属的用户 id，外键将确保这个外键指向的记录是存在的，如果你尝试删除一个用户，而这个用户还有文章存在于数据库中，那么操作将无法完成并报错。因为你删除了该用户过后，他发布的文章都没有所属用户了，而这样的情况是不被允许的。同理，你在创建一篇文章的时候也不能为它指定一个不存在的用户 id。</p>
+<p>一个表可以有多个外键，每个外键必须 REFERENCES (参考) 另一个表的主键，被外键约束的列，取值必须在它参考的列中有对应值。</p>
+<p><img src="/wm-1575707149187.png" alt="12-"></p>
+<p>在 INSERT 时，如果被外键约束的值没有在参考列中有对应，比如以下命令，参考列 (department 表的 dpt_name) 中没有 dpt3，则 INSERT 失败：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> employee <span class="keyword">VALUES</span>(<span class="number">02</span>,<span class="string">'Jack'</span>,<span class="number">30</span>,<span class="number">3500</span>,<span class="number">114114</span>,<span class="string">'dpt3'</span>);</span><br></pre></td></tr></table></figure>
+<p>可见之后将 dpt3 改为 dpt2（department 表中有 dpt2），则插入成功：</p>
+<p><img src="/wm-1575707148953.png" alt="03"></p>
+<h2 id="2-6-外键约束-2"><a href="#2-6-外键约束-2" class="headerlink" title="2.6 外键约束"></a>2.6 外键约束</h2><p>外键 (FOREIGN KEY) 既能确保数据完整性，也能表现表之间的关系。</p>
+<p>比如，现在有用户表和文章表，给文章表中添加一个指向用户 id 的外键，表示这篇文章所属的用户 id，外键将确保这个外键指向的记录是存在的，如果你尝试删除一个用户，而这个用户还有文章存在于数据库中，那么操作将无法完成并报错。因为你删除了该用户过后，他发布的文章都没有所属用户了，而这样的情况是不被允许的。同理，你在创建一篇文章的时候也不能为它指定一个不存在的用户 id。</p>
+<p>一个表可以有多个外键，每个外键必须 REFERENCES (参考) 另一个表的主键，被外键约束的列，取值必须在它参考的列中有对应值。</p>
+<p><img src="/wm-1575709254695.png" alt="12-"></p>
+<p>在 INSERT 时，如果被外键约束的值没有在参考列中有对应，比如以下命令，参考列 (department 表的 dpt_name) 中没有 dpt3，则 INSERT 失败：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> employee <span class="keyword">VALUES</span>(<span class="number">02</span>,<span class="string">'Jack'</span>,<span class="number">30</span>,<span class="number">3500</span>,<span class="number">114114</span>,<span class="string">'dpt3'</span>);</span><br></pre></td></tr></table></figure>
+<p>可见之后将 dpt3 改为 dpt2（department 表中有 dpt2），则插入成功：</p>
+<p><img src="/wm-1575709254690.png" alt="03"></p>
+<h1 id="搭建一个简易的成绩管理系统的数据库"><a href="#搭建一个简易的成绩管理系统的数据库" class="headerlink" title="搭建一个简易的成绩管理系统的数据库"></a>搭建一个简易的成绩管理系统的数据库</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>现需要构建一个简易的成绩管理系统的数据库，来记录几门课程的学生成绩。数据库中有三张表分别用于记录学生信息、课程信息和成绩信息。</p>
+<p>数据表结构如下：</p>
+<p>学生表(student)：学生 id 、学生姓名和性别</p>
+<p><img src="/wm-1575709700877.png" alt="此处输入图片的描述"></p>
+<p>课程表：课程 id 和课程名</p>
+<p><img src="/wm-1575709700880.png" alt="此处输入图片的描述"></p>
+<p>成绩表：成绩 id 、学生 id 、课程 id 和分数</p>
+<p><img src="/wm-1575709701019.png" alt="此处输入图片的描述"></p>
+<p>服务器中的 MySQL 还没有启动，请注意 MySQL 的 root 账户默认密码为空。</p>
+<h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>1.MySQL 服务处于运行状态</p>
+<p>2.新建数据库的名称为 gradesystem</p>
+<p>3.gradesystem 包含三个表：student、course、mark；</p>
+<ul>
+<li>student 表包含3列：sid(主键)、sname、gender；</li>
+<li>course 表包含2列：cid(主键)、cname；</li>
+<li>mark 表包含4列：mid(主键)、sid、cid、score ，注意与其他两个表主键之间的关系。</li>
+</ul>
+<p>4.将上述表中的数据分别插入到各个表中</p>
+<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><ul>
+<li>建立表时注意 id 自增和键约束</li>
+<li>每个表插入语句可通过一条语句完成</li>
+</ul>
+<h3 id="挑战参考代码"><a href="#挑战参考代码" class="headerlink" title="挑战参考代码"></a>挑战参考代码</h3><p>以下内容仅供参考，为了能有更好的学习效果，请尽量按自己的想法来完成练习题。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo service mysql start</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> mysql -u root</span></span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> CREATE DATABASE gradesystem;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> use gradesystem</span></span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> CREATE TABLE student(</span></span><br><span class="line">    -&gt; sid int NOT NULL AUTO_INCREMENT,</span><br><span class="line">    -&gt; sname varchar(20) NOT NULL,</span><br><span class="line">    -&gt; gender varchar(10) NOT NULL,</span><br><span class="line">    -&gt; PRIMARY KEY(sid)</span><br><span class="line">    -&gt; );</span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> CREATE TABLE course(</span></span><br><span class="line">    -&gt; cid int NOT NULL AUTO_INCREMENT,</span><br><span class="line">    -&gt; cname varchar(20) NOT NULL,</span><br><span class="line">    -&gt; PRIMARY KEY(cid)</span><br><span class="line">    -&gt; );</span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> CREATE TABLE mark(</span></span><br><span class="line">    -&gt; mid int NOT NULL AUTO_INCREMENT,</span><br><span class="line">    -&gt; sid int NOT NULL,</span><br><span class="line">    -&gt; cid int NOT NULL,</span><br><span class="line">    -&gt; score int NOT NULL,</span><br><span class="line">    -&gt; PRIMARY KEY(mid),</span><br><span class="line">    -&gt; FOREIGN KEY(sid) REFERENCES student(sid),</span><br><span class="line">    -&gt; FOREIGN KEY(cid) REFERENCES course(cid)</span><br><span class="line">    -&gt; );</span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> INSERT INTO student VALUES(1,<span class="string">'Tom'</span>,<span class="string">'male'</span>),(2,<span class="string">'Jack'</span>,<span class="string">'male'</span>),(3,<span class="string">'Rose'</span>,<span class="string">'female'</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> INSERT INTO course VALUES(1,<span class="string">'math'</span>),(2,<span class="string">'physics'</span>),(3,<span class="string">'chemistry'</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"> INSERT INTO mark VALUES(1,1,1,80),(2,2,1,85</span></span><br></pre></td></tr></table></figure>
+<h1 id="SELECT语句详解"><a href="#SELECT语句详解" class="headerlink" title="SELECT语句详解"></a>SELECT语句详解</h1><h2 id="3-1-基本的SELECT语句"><a href="#3-1-基本的SELECT语句" class="headerlink" title="3.1 基本的SELECT语句"></a>3.1 基本的SELECT语句</h2><p>SELECT 语句的基本格式为：</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> 要查询的列名 <span class="keyword">FROM</span> 表名字 <span class="keyword">WHERE</span> 限制条件;</span><br></pre></td></tr></table></figure>
+<p>如果要查询表的所有内容，则把 <strong>要查询的列名</strong> 用一个星号 <code>*</code> 号表示(实验2、3中都已经使用过)，代表要查询表中所有的列。 而大多数情况，我们只需要查看某个表的指定的列，比如要查看 employee 表的 name 和 age：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age <span class="keyword">FROM</span> employee;</span><br></pre></td></tr></table></figure>
+<p><img src="/wm-1575718104484.png" alt="01"></p>
+<h2 id="3-2-数学符号条件"><a href="#3-2-数学符号条件" class="headerlink" title="3.2 数学符号条件"></a>3.2 数学符号条件</h2><p>SELECT 语句常常会有 WHERE 限制条件，用于达到更加精确的查询。WHERE限制条件可以有数学符号 (<code>=,&lt;,&gt;,&gt;=,&lt;=</code>) ，刚才我们查询了 name 和 age，现在稍作修改：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age <span class="keyword">FROM</span> employee <span class="keyword">WHERE</span> age&gt;<span class="number">25</span>;</span><br></pre></td></tr></table></figure>
+<p>筛选出 age 大于 25 的结果：</p>
+<p><img src="/wm-1575719091134.png" alt="02"></p>
+<p>或者查找一个名字为 Mary 的员工的 name,age 和 phone：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age,phone <span class="keyword">FROM</span> employee <span class="keyword">WHERE</span> <span class="keyword">name</span>=<span class="string">'Mary'</span>;</span><br></pre></td></tr></table></figure>
+<p>结果当然是：</p>
+<p><img src="/wm-1575719091153.png" alt="03"></p>
+<h2 id="3-3-“AND”与“OR”"><a href="#3-3-“AND”与“OR”" class="headerlink" title="3.3 “AND”与“OR”"></a>3.3 “AND”与“OR”</h2><p>从这两个单词就能够理解它们的作用。WHERE 后面可以有不止一条限制，而根据条件之间的逻辑关系，可以用 [<code>条件一 OR 条件二]</code>] 和 [<code>条件一 AND 条件二</code>] 连接：</p>
+<p>例如，筛选出 age 小于 25，或 age 大于 30</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age <span class="keyword">FROM</span> employee <span class="keyword">WHERE</span> age&lt;<span class="number">25</span> <span class="keyword">OR</span> age&gt;<span class="number">30</span>;</span><br></pre></td></tr></table></figure>
+<p><img src="/wm-1575719212084.png" alt="04"></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#筛选出 age 大于 25，且 age 小于 30</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age <span class="keyword">FROM</span> employee <span class="keyword">WHERE</span> age&gt;<span class="number">25</span> <span class="keyword">AND</span> age&lt;<span class="number">30</span>;</span><br></pre></td></tr></table></figure>
+<p><img src="/wm-1575719212125.png" alt="05"></p>
+<p>而刚才的限制条件 <strong>age&gt;25 AND age&lt;30</strong> ，如果需要包含25和30这两个数字的话，可以替换为 <strong>age BETWEEN 25 AND 30</strong> ：</p>
+<p><img src="/wm-1575719212133.png" alt="06"></p>
+<h2 id="3-4-IN-和-NOT-IN"><a href="#3-4-IN-和-NOT-IN" class="headerlink" title="3.4 IN 和 NOT IN"></a>3.4 IN 和 NOT IN</h2><p>关键词 <strong>IN</strong> 和 <strong>NOT IN</strong> 的作用和它们的名字一样明显，用于筛选<strong>“在”</strong>或<strong>“不在”</strong>某个范围内的结果，比如说我们要查询在 <strong>dpt3</strong> 或 <strong>dpt4</strong> 的人:</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age,phone,in_dpt <span class="keyword">FROM</span> employee <span class="keyword">WHERE</span> in_dpt <span class="keyword">IN</span> (<span class="string">'dpt3'</span>,<span class="string">'dpt4'</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="/wm-1575720379856.png" alt="07"></p>
+<p>而 <strong>NOT IN</strong> 的效果则是，如下面这条命令，查询出了不在 <strong>dpt1</strong> 也不在 <strong>dpt3</strong> 的人：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>,age,phone,in_dpt <span class="keyword">FROM</span> employee <span class="keyword">WHERE</span> in_dpt <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">'dpt1'</span>,<span class="string">'dpt3'</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="/wm-1575720380053.png" alt="08"></p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/1440097381">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="https://www.10000h.top">10000H</a></span>
+        <span>/</span>
+        
+        <span><a href="https://niexiaotao.com">Amen&#39;s Page</a></span>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        if( '' || '')
+        var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://airclouds-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+
+
+</html>
